@@ -66,16 +66,3 @@ CREATE TABLE IF NOT EXISTS carts (
     FOREIGN KEY (product_id) REFERENCES products(id) ON DELETE CASCADE,
     UNIQUE (user_id, product_id)
 );
-
-
--- DATABASE DATA
-
-/* INSERT INTO categories (name, description) VALUES
-('Uomo', 'Abbigliamento per uomo'),
-('Donna', 'Abbigliamento per donna'),
-('Bambini', 'Abbigliamento per bambini');
-
-INSERT INTO products (name, description, price, quantity, category_id) VALUES
-('Maglietta Uomo', 'Maglietta in cotone per uomo', 19.99, 100, 1),
-('Jeans Donna', 'Jeans skinny per donna', 49.99, 80, 2),
-('Felpa Bambini', 'Felpa con cappuccio per bambini', 29.99, 50, */
